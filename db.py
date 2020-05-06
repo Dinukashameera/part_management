@@ -4,7 +4,7 @@ import pyodbc
 class Databases:
     def __init__(self):
         self.conn = pyodbc.connect('Driver={SQL Server};'
-                                   'Server=MSI;'
+                                   'Server="SERVER NAME";'
                                    'Database=part_manager;'
                                    'Trusted_Connection=yes;')
         self.cur = self.conn.cursor()
